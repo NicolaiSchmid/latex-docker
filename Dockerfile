@@ -1,5 +1,5 @@
 FROM ubuntu:latest
 
-RUN apt update
-RUN apt install ttf-ubuntu-font-family
-RUN apt install texlive texlive-latex-extra texlive-generic-extra texlive-xetex 
+RUN apt-get update -qq
+RUN apt-get install -qqy ttf-ubuntu-font-family
+RUN apt-get install -qqy texlive texlive-latex-extra texlive-generic-extra texlive-xetex 
